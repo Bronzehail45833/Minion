@@ -80,7 +80,7 @@ class HopperInventory extends CustomInventory{
 
     public function getDestoryItem(): Item{
         $item = Item::get(Item::REDSTONE_DUST);
-        $item->setCustomName(C::RED . "Destorys the miner");
+        $item->setCustomName(C::RED . "Destroys the miner");
         return $item;
     }
 
