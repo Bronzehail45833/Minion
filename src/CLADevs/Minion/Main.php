@@ -67,12 +67,12 @@ class Main extends PluginBase{
 
     public function giveItem(Player $sender): void{
 	    $sender->getInventory()->addItem($this->getItem($sender));
-	    $sender->sendMessage(C::GREEN . "You received a minion spawner.");
+	    $sender->sendMessage(C::GREEN . "You received a minion orb.");
     }
 
     public function getItem(Player $sender, int $level = 1, string $xyz = "n"): Item{
         $item = Item::get(Item::NETHER_STAR);
-        $item->setCustomName(C::BOLD . C::AQUA . "* " . C::GOLD . "Minion " . C::AQUA . "Miner" . " *");
+        $item->setCustomName(C::BOLD . C::AQUA . "* " . C::GOLD . "§bMinion " . C::AQUA . "orb" . " *");
         $item->setLore(
             [
                 " ",
