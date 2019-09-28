@@ -92,10 +92,10 @@ class Minion extends Human{
 
     public function sendSpawnItems(): void{
         $this->getInventory()->setItemInHand(Item::get(Item::DIAMOND_PICKAXE));
-        $this->getArmorInventory()->setHelmet( Item::get(Item::SKULL, 3));
-        $this->getArmorInventory()->setChestplate(Item::get(Item::LEATHER_CHESTPLATE));
-        $this->getArmorInventory()->setLeggings(Item::get(Item::LEATHER_LEGGINGS));
-        $this->getArmorInventory()->setBoots(Item::get(Item::LEATHER_BOOTS));
+        $this->getArmorInventory()->setHelmet( Item::get(Item::DIAMOND_HELMET));
+        $this->getArmorInventory()->setChestplate(Item::get(Item::DIAMOND_CHESTPLATE));
+        $this->getArmorInventory()->setLeggings(Item::get(Item::DIAMOND_LEGGINGS));
+        $this->getArmorInventory()->setBoots(Item::get(Item::DIAMOND_BOOTS));
     }
 
     public function getLookingBlock(): Block{
